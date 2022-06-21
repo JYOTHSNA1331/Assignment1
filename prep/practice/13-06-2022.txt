@@ -1,0 +1,72 @@
+img
+  
+    src,alt,height,width
+
+a:
+
+    target --> _self,_blank
+
+base:
+
+      it is used in head
+
+Lists:
+
+    ol,ul,dl(description lists)
+
+font:
+ 
+   color size
+
+14-06-22
+----------
+
+input - takes the data
+         type -> datetime-local,file
+
+         boolean attribute--> required
+
+video -->  controls,loop,autoplay,muted
+
+iframes - inline frame
+
+img is self closing and video is not self closing
+
+embed video --><iframe width="885" height="498" src="https://www.youtube.com/embed/SVetbRbmbWo" title="Meet Lamput! Part 2 | Lamput | Cartoon Network" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+15-06-2022
+-------------
+tables
+    rowspan,colspan
+
+which contain opening and closing tag is called element
+
+inline elements
+    
+block level elements- starts on new line,occupy 100% width
+
+16-06-22
+-----------
+semantic tags
+--------------
+div - used for making small sections of the webpage
+section,nav,footer,header
+
+target attribute -> anchor 
+
+&nbsp,pre,code,cellpadding,blockquote,borderspacing
+
+ol->reversed
+
+17-06-2022
+-------------
+relative paths:
+
+current folder: ./
+parent folder ../
+
+20-06-2022
+---------------
+webpage: written html,js,css
+website

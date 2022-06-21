@@ -1,0 +1,18 @@
+Shortcuts in VS code:
+
+ctrl (+) '+'  --> zoom in
+
+ctrl (+) '-' --> zoom out
+
+ctrl (+) s --> saves the file
+
+ctrl (+) L --> select the line
+
+ctrl (+) D --> Find the next consequent element in text
+
+
+https://docs.google.com/spreadsheets/d/1MxHoADIejkj9cmu7-60hyCOI_72FpFfhDONFfSLrEUw/edit#gid=0
+
+
+
+
