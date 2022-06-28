@@ -18,6 +18,7 @@ h1,h2{
     background-color:yellow;
     font-style:italic;
     color:tomato;
+    text-decoration:none;
 }
 .th{
         background-color:yellow;
