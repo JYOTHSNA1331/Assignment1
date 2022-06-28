@@ -15,12 +15,17 @@ h1,h2{
     text-decoration:line-through;
 }
 .thr{
+    
     background-color:yellow;
-    font-style:italic;
-    color:tomato;
-    text-decoration:none;
+
 }
 .th{
         background-color:yellow;
         font-weight:bold;
+        
+}
+a{
+    text-decoration: none;
+    font-style:italic;
+    color:tomato;
 }
