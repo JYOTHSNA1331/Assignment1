@@ -1,0 +1,20 @@
+body{
+    color:brown
+}
+#abc{
+   letter-spacing:5px;
+}
+#a{
+    color:tomato;
+    font-style:italic;
+}
+h1,h2{
+    color:tomato;
+}
+.l{
+    font-style:italic;
+    text-decoration: underline;
+}
+.td{
+    text-decoration:line-through;
+}
