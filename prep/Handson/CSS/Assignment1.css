@@ -4,10 +4,6 @@ body{
 #abc{
    letter-spacing:5px;
 }
-#a{
-    color:tomato;
-    font-style:italic;
-}
 h1,h2{
     color:tomato;
 }
@@ -17,4 +13,9 @@ h1,h2{
 }
 .td{
     text-decoration:line-through;
+}
+.thr{
+    background-color:yellow;
+    font-style:italic;
+    color:tomato;
 }
