@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  background-image: url(image.jpg);
+  background-size: 1700px 370vh;
+  background-repeat: no-repeat;
+  
+  
+}
+
+.background {
+  height: 360vh;
+  border: 10px groove greenyellow; 
+  position: relative;
+}  
+
+.class0 {
+  background-color: black;
+  font-size: 1.5rem;
+  color: white;
+  border: 7px solid red;
+  border-radius: 30px;
+  position: absolute;
+  text-align: center;
+}
+
+.class1 {
+  width: 450px;
+  height: 100px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  top: 50px;
+  left: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.class2 {
+  height: 40px;
+  width: 500px;
+  top: 70px;
+  left: 300px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  font-style: italic
+  
+}
+
+.class3 {
+  width: 450px;
+  height: 100px;
+  top: 50px;
+  right: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  font-style: italic
+}
+
+.class4 {
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  top: 208vh;
+  left: 40%;
+  padding-top: 10px;
+  
+}
+
+.circle {
+
+ position: absolute;
+ width: 500px;
+ height: 500px;
+ top: 90vh;
+ left: 70px;
+ background-color: rgb(87, 176, 174);
+ border: 15px solid gray;
+ border-radius: 50%;
+
+}
+
+.align1 {
+
+  padding-top: 70px;
+  padding-bottom: 50px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: underline;
+
+}
+
+.align2 {
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.align3 {
+
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.form1 {
+  text-align: center;
+  background-color: white;
+  color: red;
+  font-size: 25px;
+  position: absolute;
+  width: 500px;
+  height: 1000px;
+  border: 10px dashed red;
+  top: 400px;
+  right: 130px;
+}
+input{
+  text-align: center;
+}
+
+.set {
+  margin-top: 230vh;
+}
+
+.flex1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.list1 {
+  text-align: center;
+  background-color: aqua;
+  color: rgb(84, 53, 138);
+  border: 3px solid darkgreen;
+  font-size: 20px;
+  margin: 40px;
+  border-radius: 25px;
+  height: 300px;
+}
+
+ul {
+  width: 300px;
+}
