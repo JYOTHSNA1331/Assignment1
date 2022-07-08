@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToDo App UI Web</title>
+  <link rel="stylesheet" href="add.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+  <div class="container-2">
+    <h1><span>Trip to Paris</span></h1>
+    <br />
+    <div id="back-arrow">
+      <a href="index.html">
+        <p id="back-button">
+          <i class="fa fa-arrow-circle-left" style="font-size:30px;color:red"></i>
+          <span id="back">Back</span>
+        </p>
+      </a>
+    </div>
+
+    <main id="boxes">
+      <div class="box">
+        <span class="title">Trip to Paris</span>
+        <hr class="box-hr" />
+        <br />
+        <span class="text-crossed">&nbsp;&nbsp;Completed Task</span>
+        <br /><br />
+        <form action="">
+          <input type="checkbox" name="task" id="task" />
+          <label for="task">Pending Task</label>
+        </form>
+        <div class="add-button">
+          <a href="#popup"> <span> <i class="fa fa-plus-circle" style="font-size:35px !important;color:red"></i></span></a>
+        </div>
+    </main>
+  </div>
+
+  <div id="popup" class="blur">
+    <div id="popup-window">
+      <span id="new-item">Add New Item</span>
+      <input type="text" name="item">
+      <a href="#" class="close">ADD</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
