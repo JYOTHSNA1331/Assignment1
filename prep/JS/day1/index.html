@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        pre,i,p{
+            font-family:serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Introduction to JavaScript</h3>
+    <pre>
+        JavaScript is an interpreted Language
+        It is used to create interactive websites
+        JavaScript cannot run on its own. The browser is responsible for running JavaScript code.
+        we place JavaScript code within <b>script</b> tags in html
+    </pre>
+    <h3>JavaScript engine</h3>
+    <pre>
+        A JavaScript engine is a computer program that executes JavaScript code and converts it into computer understandable language.
+        List of JavaScript Engines:
+        Browser                     Name of the JS Engine
+        --------------------------------------------------
+        Google Chrome	            V8
+        Edge (Internet Explorer)	    Chakra
+        Mozilla Firefox	            Spider Monkey
+        Safari 	                           Javascript Core Webkit
+    </pre>
+    <h3>Execution Context</h3>
+    <pre>
+        Execution context is used to describe how a code works inside.
+        It parses the code line by line and stores the variables and functions into the memory.
+        <b>Global Execution Context</b> is the first thing that is created when you write JavaScript code.
+        Whenever a function gets invoked, called, or executed, a new local execution context gets created.
+
+    </pre>
+    <h3>call stack</h3>
+    <pre>
+        call stack is a data structure that uses the Last In, First Out (LIFO) principle
+        The call stack is synchronous.
+    </pre>
+    <h3>Declaration of variables in JS</h3>
+    <pre>
+        In JavaScript, we can declare a variable in three different ways by using <b>var, let</b> and <b>const</b> keyword.
+        <b>Var</b>
+              This keyword is used to declare variable globally. 
+              If you used this keyword to declare variable then the variable can accessible globally and changeable also.
+              It is good for a short length of codes, if the codes get huge then you will get confused.
+              <i>syntax: var a = 5</i>
+        <b>let</b>
+              This keyword is used to declare variable locally. 
+              If you used this keyword to declare variable then the variable can accessible locally and it is changeable as well.
+              <i>syntax: let b = 10 </i>
+        <b>const</b>
+              This keyword is used to declare variable locally.
+              const values can't be reassigned. So we should assign the value while declaring the variable.
+              <i>syntax: const c = 30</i>
+     </pre>
+    <h3>Difference between undefined and not defined in Javascript</h3>
+    <pre>
+        <b>Undefined</b>
+             <pre>
+                Whenever we declare a variable without assigning any value to it, javascript implicitly assigns its value as undefined.
+                Ex:
+                    let name;
+                    console.log(name); //undefined
+             </pre>
+    <b>Not define</b>
+    <pre>
+            A not defined is a variable which is not declared at a given point of time with declaration keyword like var, let or const.
+             Ex:
+                  console.log(b);
+                  b = 5;
+            While if we don't use var keyword the output will be:-
+                   //Output:- ReferenceError: b is not defined
+        </pre>
+    <h3>Some errors in JS</h3>
+    <i>SyntaxError: </i><p>The Javascript SyntaxError occurs when trying to interpret code that is not syntactically valid.</p>
+    <i>Reference Error: </i><p>when a variable that doesn't exist (or hasn't yet been initialized) in the current scope is referenced</p>
+    </pre>
+    <h3>Data types in JS</h3>
+    <ul>
+        <li>number</li>
+        <li>string</li>
+        <li>boolean</li>
+        <li>object</li>
+        <li>buffer</li>
+    </ul>
+    <h3>strict mode</h3>
+    <p>
+        The statement “use strict”; instructs the browser to use the Strict mode
+    </p>
+    <h3>Hoisting in JavaScript</h3>
+    <pre>
+        The JavaScript engine moves the variable and function declarations to the top of your code. This feature is known as hoisting in JavaScript.
+        In variable hoisting keyword var is hoisted and let and const does not allow hoisting.
+        Like variables, the JavaScript engine also hoists the function declarations. 
+        The JavaScript engine doesn't hoist the function expressions and arrow functions.
+    </pre>
+    <h3>Functions in JavaScript</h3>
+    <pre>
+        A Function is a block of code that is designed to perform a task and executed when it is been called or invoked.
+       There are 3 ways of writing a function in JavaScript:
+       <b>Function Declaration</b>
+        function add(a, b) {        
+        console.log(a + b);
+         }  
+         add(2, 3);
+        <b>Function Expression</b>
+            const add = function(a, b) {
+            console.log(a+b);
+            }
+             add(2, 3);
+        <b>Arrow Function</b>
+              It is used to shorten the code. 
+              Here we do not use the “function” keyword and use the arrow symbol.
+             
+              let add = (a, b) => a + b;
+              console.log(add(3, 2));
+    </pre>
+</body>
+
+</html>
