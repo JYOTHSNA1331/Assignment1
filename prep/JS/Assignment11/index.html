@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="text">Welcome to Prepbytes</div><br>
+    <h1>DOM Manipulation</h1><br>
+    <div class="box">The HTML DOM can be accessed with JavaScript</div><br>
+    <script src="Index.js"></script><br>
+    <h1>Hello</h1>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+    </div><br>
+    <button onclick="changeDirection()">Click Me</button>
+
+<p id="demo"></p>
+<div id="clock"></div> 
+
+<select name="year" id="year">
+    <option value="20-21">20-21</option>
+    <option value="21-22">21-22</option>
+</select>
+<button class="button" id="print" onclick="printValue()">Print</button><span id="printValue"></span>
+
+<form action="" class="form">
+    <label for="name">Name:</label>
+    <input required type="text" name="name" id="name"><br><br>
+    <label for="email">Email:</label>
+    <input required oninput="emailCheck()" type="email" name="email" id="email">
+    <span id="emailcheck" class="check"></span><br><br>
+    <label for="phoneno">Phone No:</label>
+    <input required oninput="numberCheck()" type="number" name="phoneno" id="phoneno">
+    <span class="check" id="digitcheck"></span>
+    <span class="check" id="startcheck"></span><br><br>
+    <label for="byear">Birth Year:</label>
+    <input required oninput="bYearCheck()" type="number" name="byear" id="byear">
+    <span class="check" id="byearcheck"></span><br><br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
