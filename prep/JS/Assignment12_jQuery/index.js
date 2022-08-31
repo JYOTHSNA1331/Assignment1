@@ -7,7 +7,7 @@
 
 $('#b3').click(function(){
 $.ajax({
-    url: "https://jsonplaceholder.typicode.com/todos/12",
+    url: "https://jsonplaceholder.typicode.com/todos/5",
     type: "GET",
     success: function(data) {
         console.log(data);
