@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h3>Difference between “ == “ and “ === “ operators.</h3>
+  <p>== checks data only while === checks value as well as data type</p>
+  <h3>What is spread operator</h3>
+  <p>new feature in ES6
+  <p>
+  <p>Spread operator allows iterables( arrays / objects / strings ) to be expanded into single arguments/elements.
+
+  <pre>function sum(x, y, z) {
+      return x + y + z;
+    }
+    const numbers = [10, 20, 30];
+    console.log(sum(...numbers));
+    console.log(sum.apply(null, numbers)); </pre>
+
+  <h3>Difference between var,let and const</h3>
+  <pre>
+    var:-
+         1)The scope of a var variable is functional scope.
+         2)It can be updated and re-declared into the scope.
+         3)It can be declared without initialization.
+         4)It can be accessed without initialization as its default value is “undefined”.
+         5)hoisting is supported.
+        
+         let:-
+        
+        1)The scope of a let variable is block scope.
+         2)It can be updated but cannot be re-declared into the scope.
+         3)It can be declared without initialization. 
+         4)It cannot be accessed without initialization otherwise it will give ‘referenceError’.
+         5)Hoisting is not supported.
+      
+        const:-
+           1)The scope of a const variable is block scope.
+           2)It cannot be updated or re-declared into the scope.
+           3)It cannot be declared without initialization.
+           4)It cannot be accessed without initialization, as it cannot be declared without initialization
+           5)Hoisting is not supported.
+   </pre>
+
+  <h3>Execution Context</h3>
+  <pre>
+      1) javascript engine creates the global execution context,before start to execute any code.
+      2) variable and function that is not inside any function.A new execution context gets created on every time a function is called.
+      3)declare a variable and function which all ready present in the global execution context.
+      4)The environment in which the our code is executed and evaluated 
+      5)It has two phases:
+           ->Creation phase
+           ->Execution Phase
+    </pre>
+
+  <h3>What is creation phase and execution phase?</h3>
+       <pre>
+        When the JavaScript engine executes a script for the first time, it creates the global execution context. During this phase, the JavaScript engine performs the following tasks:
+        - Create the global object i.e., window in the web browser or global in Node.js.
+        - Create the this object and bind it to the global object.
+        - Setup a memory heap for storing variables and function references.
+        - Store the function declarations in the memory heap and variables within the global execution context with the initial values as undefined.
+        After the creation phase, the global execution context moves to the execution phase.
+        During the execution phase, the JavaScript engine executes the code line by line, assigns the values to variables, and executes the function calls.
+        For each function call, the JavaScript engine creates a new function execution context.
+       </pre>
+       
+  <h3>What is meant by first class functions</h3>
+  <pre> First class function,are those function which can be passed as an argument into another function or 
+    can be returned from another functions,and can be assigned a value to a variable,
+    they are also called as "First class citizens."</pre>
+
+  <h3>What are closures? Give an example of closure</h3>
+  <pre>
+    Closure is an action that,is inner function can have access to the outer function variables and parameters, as well as all global variables.
+
+         const outer_Function=(b)=>{
+            var a=10;
+            const inner_Function=()=>{
+               var sum = a+b; 
+                console.log("sum of the values:"+sum);
+           }
+           inner_Function();
+         }
+         outer_Function(5);
+   </pre>
+</body>
+
+</html>
