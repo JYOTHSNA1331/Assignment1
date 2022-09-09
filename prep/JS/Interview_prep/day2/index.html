@@ -9,20 +9,141 @@
 <body>
     
     <h3>Explain call(), apply() and, bind() methods. Give an example of call(), apply(), bind()</h3>
-    <h3>What are objects in javascript?</h3>
-    <h3>What are function constructors?</h3>
-    <h3>Explain prototypes</h3>
-    <h3>What is prototype chain</h3>
-    <h3>Give an example of inheritance using function constructor</h3>
-    <h3>What are callbacks?</h3>
-    <h3>What is the use of setTimeout</h3>
-    <h3>What is an event loop and call stack</h3>
-    <h4>Call Stack</h4>
+    <h4>Call</h4>
     <ul>
-    <li>call stack keeps track of the function calls in your code</li>
-    <li>It follows the LIFO principle</li>
-    <li>Every time a script or function calls a function, it's added to the top of the call stack.</li>
-    <li> Every time the function exits, the interpreter removes it from the call stack.</li>
+        <li>The call() method is a predefined JavaScript method.</li>
+        <li>It can be used to invoke (call) a method with an owner object as an argument (parameter).</li>
+        <pre>
+            const person = {
+                fullName: function() {
+                  return this.firstName + " " + this.lastName;
+                }
+              }
+              const person1 = {
+                firstName:"John",
+                lastName: "Doe"
+              }
+              const person2 = {
+                firstName:"Mary",
+                lastName: "Doe"
+              }
+              person.fullName.call(person1);   // This will return "John Doe":
+        </pre>
     </ul>
+    <h4>Apply</h4>
+    <ul>
+        <li>The apply() method takes arguments as an array.</li>
+        <pre>
+            const person = {
+                fullName: function(city, country) {
+                  return this.firstName + " " + this.lastName + "," + city + "," + country;
+                }
+              }
+              
+              const person1 = {
+                firstName:"John",
+                lastName: "Doe"
+              }
+              
+              person.fullName.apply(person1, ["Oslo", "Norway"]);              
+        </pre>
+    </ul>
+    <h4>bind</h4>
+    <ul>
+        <li> With the bind() method, an object can borrow a method from another object.</li>
+        <pre>
+            const person = {
+                firstName:"John",
+                lastName: "Doe",
+                fullName: function () {
+                  return this.firstName + " " + this.lastName;
+                }
+              }
+              
+              const member = {
+                firstName:"Hege",
+                lastName: "Nilsen",
+              }
+              
+              let fullName = person.fullName.bind(member);       
+        </pre>
+    </ul>
+   
+    <h3>What are objects in javascript?</h3>
+    <ul>
+        <li>n JavaScript, an object is an unordered collection of key-value pairs. Each key-value pair is called a property.</li>
+        <li> The key of a property can be a string.</li>
+        <li> And the value of a property can be any value, e.g., a string, a number, an array, and even a function.</li>
+    </ul>
+    <pre>
+        let person = {
+            firstName: 'John',
+            lastName: 'Doe'
+        };
+    </pre>
+    <h3>What are function constructors?</h3>
+    <ul>
+        <li>In JavaScript, a constructor function is used to create objects.</li>
+        <li>To create an object from a constructor function, we use the new keyword.</li>
+    </ul>
+    <pre>
+              function Person () {
+                      this.name = 'John',
+                      this.age = 23,
+                      this.greet = function () {
+                                       console.log('hello');
+                                  }
+                       }
+                const person1 = new Person();
+                const person2 = new Person();
+                console.log(person1.name);  // John
+                console.log(person2.name);  // John
+    </pre>
+    <h3>Explain prototypes</h3>
+    <ul>
+    <li>Prototype is used to provide additional properties to all the objects created from a constructor function.</li>
+    <li>You can also add new methods to a constructor function using prototype.</li>
+    </ul>
+    <h3>What is prototype chain</h3>
+    <pre>
+        const Person={
+            name:"John"
+        }
+        console.log(Person.__proto__);
+        console.log(Person.__proto__.__proto__); //null
+    </pre>
+    <h3>Give an example of inheritance using function constructor</h3>
+    <pre>
+        const Person = {
+                name: "John",
+                age:30,
+                ShowDetails: function(){
+                     console.log(`name ${this.name}age ${this.age}`);
+                     return(`name ${this.name}age ${this.age}`)
+               }   
+            }
+         console.log(Person);
+    </pre>
+    <h3>What are callbacks?</h3>
+    <p>Any function that is passed as an argument to another function is called as a callback function.</p>
+    <h3>What is the use of setTimeout</h3>
+    <ul>
+        <li>The setTimeout() is a method inside the window object. </li>
+        <li>it calls the specified function or evaluates a JavaScript expression provided as a string after a given time period for only once.</li>
+        <li>We use this to delay some kind of executions. It is also used for animations and DOM manipulations in jquery.</li>
+    </ul>
+    
+    <h3>What is a pure function?</h3>
+    <ul>
+        <li>
+            A Pure Function is a function that always returns the same result if the same arguments are passed. </li>
+          <li> It does not depend on any state or data change during a program's execution. Rather, it only depends on its input arguments.</li> 
+           <li>Also a pure function does not produce any observable side effects such as network requests or data mutation etc.</li> 
+        </ul>
+        Let's see the below JavaScript Function:
+           <pre> function calculateGST( productPrice ) {
+                             return productPrice * 0.05;
+                             }
+                preoductPrice(2) // It always return 1 as output </pre>
 </body>
 </html>
