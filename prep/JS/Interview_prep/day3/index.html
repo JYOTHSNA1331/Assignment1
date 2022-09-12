@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>What are promises and why do we need them?</h3>
+    <p>Promises are used to handle asynchronous operations in JavaScript. They are easy to manage when dealing with
+        multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code.</p>
+    <ul>
+        <li>Improves Code Readability</li>
+        <li>Better handling of asynchronous operations</li>
+        <li>Better Error Handling</li>
+    </ul>
+    <pre>
+        var promise = new Promise(function(resolve, reject) {
+            const x = "Hello";
+            const y = "Hello"
+            if(x === y) {
+              resolve();
+            } else {
+              reject();
+            }
+          });
+             
+          promise.
+              then(function () {
+                  console.log('Matched');
+              }).
+              catch(function () {
+                  console.log('-1');
+              });
+    </pre>
+
+    <pre>
+        A promise may have one of three states.
+             - Pending
+             - Fulfilled
+            - Rejected
+A promise starts in a pending state. That means the process is not complete. 
+If the operation is successful, the process ends in a fulfilled state. 
+And, if an error occurs, the process ends in a rejected state.
+It is also used to handle Web API calls.
+</pre>
+
+    <h3>What is the purpose of async/await keywords?</h3>
+    <p>async makes a function return a Promise, await makes a function wait for a Promise</p>
+    <pre>
+        async function asyncFunc() {
+            let result = await promise;  
+            console.log(result);
+            console.log("hello");
+          }
+          asyncFunc();
+          
+    </pre>
+
+    <h3>What is hoisting?</h3>
+    <ul>
+        <li>JavaScript only hoists declarations, not the initializations.</li>
+        <li>var is hoisted and let and const does not allow hoisting.</li>
+    </ul>
+    <h3>What is the DOM?</h3>
+    <p>DOM stands for Document Object Model and is a programming interface that allows us to create, change or remove
+        elements from the document. We can also add events to these elements to make our page more dynamic.</p>
+
+    <h3>Difference between undefined vs not defined vs NaN</h3>
+    <p>Undefined: In JavaScript, undefined means a variable has been declared but has not yet been assigned a value to
+        it.</p>
+    <p>not defined: In JavaScript, not defined means a variable is not declare or trying to access the variable out of
+        scope</p>
+    <p>Nan: NaN stands for Not a Number. It represents a value which is not a valid number. It can be used to check
+        whether a number entered is a valid number or not a number</p>
+
+    <h3>How many operators do we have in JS ?</h3>
+    <p>There are following types of operators in JavaScript.
+    <ol type="1">
+        <li> Arithmetic Operators (+,-,*,/,++,--,%)</li>
+        <li> Comparison (Relational) Operators</li>
+        <!-- <,>,<=,>=,==,===,!=,!== -->
+        <li> Bitwise Operators (&,|,^,left shifh,right shift,)</li>
+        <li> Logical Operators(&&,||)</li>
+        <li> Assignment Operators(+=,-=,*=)</li>
+        <li> Special Operators(typeof,instanceof)</li>
+    </ol>
+    </p>
+
+    <h3>What is callback hell</h3>
+    <p>
+        Callback Hell is essentially nested callbacks stacked below one another forming a pyramid structure. Every
+        callback depends/waits for the previous callback, thereby making a pyramid structure that affects the
+        readability and maintainability of the code.
+    </p>
+    <h3>What is promise chaining</h3>
+     <p>Promise Chaining is a simple concept by which we may initialize another promise inside our .then() method and accordingly we may execute our results.</p>
+     <pre>
+       
+            let promise = new Promise((resolve, reject) => {
+              resolve("Hello JavaScript");
+            });
+            promise
+              .then(
+                new Promise((resolve, reject) => {
+                  resolve("Hello world");
+                }).then((result1) => {
+                  console.log(result1);
+                })
+              )
+              .then((result2) => {
+                console.log(result2);
+              });
+            
+     </pre>
+     <h3>What are arrow functions?</h3>
+    <ul>
+        <li>Arrow functions are introduced in ES6, which provides you a more accurate way to write the functions in
+            JavaScript.</li>
+        <li>Arrow functions are anonymous functions</li>
+    </ul>
+    <pre>
+        let add = (x, y) => x + y;
+        console.log(add(10, 20)); // 30;
+    </pre>
+
+    <h3>Give an example of async/await</h3>
+    <pre>
+        const getData = async() => {
+            var y = await "Hello World";
+            console.log(y);
+        }
+         
+        console.log(1);
+        getData();
+        console.log(2);
+
+        //output
+        //1
+        //2
+        //Hello World
+    </pre>
+</body>
+
+</html>
