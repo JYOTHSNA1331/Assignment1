@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>What is a Temporal Dead Zone?</h3>
+        <p>
+            when we try to aceess the variables of let and const without initilizing we get an referrence error.
+            The area between the variable declaration and initialization is called Temporal dead zone
+        </p>
+
+    <h3>What is the for-in loop in JavaScript? Give its syntax</h3>
+    <p>For-in loop is used to iterate over object</p>
+    <pre>
+        let a={name:'ABC',
+                salary:20000}
+        for (let i in a) {
+            console.log(i);
+          }
+    </pre>
+
+    <h3>Explain Local Scope, Block Scope, Functional Scope and Scope Chain in javascript</h3>
+         <p>
+            Local Scope: Variables declared within a JavaScript function, become LOCAL to the function.<br>
+            Block scope: variables with let and const keyword provide block scope. They are accessible only within that block<br>
+            Functional Scope: local variables have functional scope.They can be accessed within that function<br>
+            Scope Chain: trying to access the variable in another scope.
+         </p>
+
+    <h3>What is difference between null and undefined and where to use what?</h3>
+    <pre>In 'undefined', we will define a variable, but we won't assign a value to that variable. On the other hand, in
+        'null' we will define a variable and assign the 'null' value to the variable.
+         Both are primitive data types.
+         </pre>
+
+    <h3>what is Symbol?</h3>
+    <pre>
+        Symbols are primitive data-type and was introduced in ES6.
+        These are defined using factory function Symbol()
+        They return unique Identifiers and they are immutable
+
+        let s= Symbol("Hello")
+        let p = Symbol("Hello")
+        console.log(s==p) //return false
+
+    </pre>
+
+    <h3>Write code to explain map and filter in arrays</h3>
+       <pre> Map: iterate each and every values of an array and push into another array
+          let a=[1,2,3,4,5] 
+          let b=a.map(n=>n*2)
+          console.log(b)//[2,4,6,8,10]
+
+        Filter: It removes the item from an array based on certain condition
+             let a=[1,2,3,4,5] 
+             let b=a.filter(n=>n>2)
+             console.log(b)//[3,4,5] </pre>
+    
+    <h3>Explain passed by value and passed by reference</h3>
+        <pre> Pass by value: primitive data type. we are pass the variable as an argument.A copy of variable is created.
+              let a=10;
+              let b=a;
+              b=b+a 
+              console.log(a)//10
+              console.log(b)//15
+         pass by reference: Non-primitive data type. we pass the address as an argument.
+              
+                let a =[1,2,3,4,5] 
+                let b= a 
+                b.push(6)
+                console.log(a)//1,2,3,4,5,6
+                console.log(b)//1,2,3,4,5,6 </pre>
+        
+    <h3>Please explain Self Invoking Function and its code</h3>
+    <p>Self Invoking function are also called as immediately invoked Function Expression(IIFE)
+        They are executed Immediately after their declaration</p>
+    <pre>
+            (function(){
+               console.log("Hello World")
+            })();
+        </pre>
+
+    <h3>What is an event loop and call stack</h3>
+        <p>Event loop: Event loop is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. 
+        Call stack maintains the "Order of execution of execution contexts".</p>
+</body>
+
+</html>
